@@ -1,0 +1,11 @@
+package com.huantec.design.factory;
+
+/**
+ * @author liuhuan
+ */
+public class Circle implements Shape {
+    @Override
+    public void draw() {
+        System.out.println("Circle :: draw...");
+    }
+}
