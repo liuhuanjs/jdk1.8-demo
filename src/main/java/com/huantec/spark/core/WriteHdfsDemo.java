@@ -11,6 +11,7 @@ public class WriteHdfsDemo {
     public static void main(String[] args) {
         JavaSparkContext jsc = new JavaSparkContext("local[*]", "master");
 
+        System.out.println("hello master");
         JavaRDD<String> stringJavaRDD = jsc.textFile("");
 
         stringJavaRDD.saveAsTextFile("");
